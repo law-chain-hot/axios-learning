@@ -36,12 +36,22 @@
         // 2. Send POST requst
         btns[1].onclick = () => {
             axios({
+                method: 'post',
+                url: 'http://localhost:3000/posts',
+                data: {
+                    title: 'test post 1',
+                    author: 'Luo again'
+                }
+            }).then(res => {
+                console.log(res)
+            })
+        }
+
+        // 3. Send DELETE requst
+        btns[2].onclick = () => {
+            axios({
                 method: 'delete',
-                url: 'http://localhost:3000/posts/5',
-                // data: {
-                //     title: 'test post 1',
-                //     author: 'Luo again'
-                // }
+                url: 'http://localhost:3000/posts/1',
             }).then(res => {
                 console.log(res)
             })

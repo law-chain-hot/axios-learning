@@ -1,11 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
       "id": 2,
       "title": "post test",
       "author": "Luo"
@@ -24,15 +19,19 @@
       "title": "test post 1",
       "author": "Luo again",
       "id": 6
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "test post 1",
+      "author": "Luo again",
+      "id": 7
+    },
+    {
+      "title": "test post 1",
+      "author": "Luo again",
+      "id": 8
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
