@@ -59,7 +59,9 @@
         btns[0].onclick = () => {
             axios({
                 method: 'GET',
-                url: 'http://localhost:3000/posts/2'
+                url: 'https://law-chain-hot.github.io/portfolio/#/home',
+                withCredentials: true,
+                xsrfCookieName: 'gznotes-visited'
             }).then(res => {
                 console.log(res)
             }).catch(error => {
@@ -75,7 +77,7 @@
                 data: {
                     title: 'test post 1',
                     author: 'Luo again'
-                }
+                },
             }).then(res => {
                 console.log(res)
             })
